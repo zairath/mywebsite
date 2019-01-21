@@ -11,68 +11,79 @@
                 </div>
              </div>
         </div>
-        <div class="navbar navbar-inverse" role="banner">
+
             <div class="container">
+              <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a class="navbar-brand" href="<?php echo base_url();?>homepage/home">
-                        <h1><img src="<?php echo base_url();?>assets/images/logo.png" alt="logo"></h1>
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="<?php echo base_url();?>homepage/home">
+                        <h1><img src="<?php echo base_url();?>assets/images/logo.png" alt="logo" width="150px"></h1>
                     </a>
+                </div>
+
+
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown mega-dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="glyphicon glyphicon glyphicon-menu-hamburger"></span></a>
+
+                      <ul class="dropdown-menu mega-dropdown-menu row">
+                        <li class="col-sm-3">
+                          <ul>
+                            <li class="dropdown-header">About Us</li>
+                            <li><a href="#">OverView</a></li>
+                            <li><a href="#">Vision, Mision & Value</a></li>
+                            <li><a href="#">About Indonesia</a></li>
+                            <li><a href="#">Our People</a></li>
+
+                          </ul>
+                        </li>
+                        <li class="col-sm-3">
+                          <ul>
+                            <li class="dropdown-header">Our Services</li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li><a href="#">#</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">News And Articles</li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Article</a></li>
+                            <li><a href="#">NewsLetters</a></li>
+                          </ul>
+                        </li>
+                        <li class="col-sm-3">
+                          <ul>
+                            <li class="dropdown-header">Why Integra</li>
+                            <li><a href="#">Why Integra</a></li>
+                            <li><a href="#">Special Program</a></li>
+                            <li><a href="#">Awards </a></li>
+                            <form class="form" role="form">
+                              <div class="form-group">
+                                <label class="sr-only" for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                              </div>
+                              <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                            </form>
+                          </ul>
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul>
 
                 </div>
-                <div class="collapse navbar-collapse" style="padding-right: 0px; padding-left: 0px; padding-top: 10px;">
-                    <form class="hidden-md hidden-lg hidden-sm">
-                        <input type="text" class="search-form" autocomplete="off" placeholder="Search" style="width: 100%; margin-right: 0px; margin-left: 0px;">
-                    </form>
-                    <ul class="nav navbar-nav navbar-right" style="padding-left: 20px; padding-right: 20px;">
-                        <li id="home"><a href="<?php echo base_url()?>homepage/home">Home</a></li>
-                        <li class="dropdown"><a href="#">About Us<i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="<?php echo base_url()?>aboutus/overview">Overview</a></li>
-                                <li><a href="<?php echo base_url()?>aboutus/visimisi">Vision, Mision & Value </a></li>
-                                <li><a href="<?php echo base_url()?>aboutus/aboutindonesia">About Indonesia</a></li>
-                                <li><a data-toggle="collapse" role="button" aria-expanded="false" aria-control="ourPeople" data-target="#ourPeople">Our People<i class="fa fa-angle-down"></i></a>
-                                    <ul class="collapse" id="ourPeople">
-                                        <li><a href="<?php echo base_url()?>aboutus/bod" title="">Board of Director</a></li>
-                                        <li><a href="<?php echo base_url()?>aboutus/leadership" title="">Senior Personel</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li><a href="<?php echo base_url()?>ourservices/service">Our Services</a></li>
-                        <li class="dropdown"><a href="">Why Integra<i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="<?php echo base_url()?>whyintegra/why_integra">Why Integra</a></li>
-                                <li><a href="<?php echo base_url()?>whyintegra/specialprogram">Special Program</a></li>
-                                <li><a href="#">Awards</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" title="">News & Articles<i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="<?php echo base_url()?>newsarticles/news" title="">News</a></li>
-                                <li><a href="<?php echo base_url()?>newsarticles/articles" title="">Article</a></li>
-                                <li><a href="<?php echo base_url()?>newsarticles/downloadnews" title="">Newsletters</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="<?php echo base_url()?>integracareer/career">Career</a></li>
-                        <li><a href="<?php echo base_url()?>contact_us/contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="search hidden-xs">
-                    <form role="form">
-                        <i class="fa fa-search"></i>
-                        <div class="field-toggle">
-                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                        </div>
-                    </form>
-                </div>
+                <!-- /.nav-collapse -->
+              </nav>
             </div>
-        </div>
+
+
+
+
+
+
     </header>
